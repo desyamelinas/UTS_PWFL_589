@@ -1,12 +1,17 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>yuhu</title>
-</head>
-<body>
-	<center>
-		<a href="<?php echo base_url ('C_page/tambahmhs/'); ?>">Tambah</a>
-	<table border="1">
+<div class="content-wrapper">
+    <div class="container">
+    <div id='notifications' ><center><h1><?php echo $this->session->flashdata('berhasil');?></h1></center></div>
+    <div id='notifications' ><center><h1><?php echo $this->session->flashdata('gagal');?></h1></center></div>
+		<section class="content">
+			
+			<div class="box box-warning">
+	      		<div class="box-header">
+			        <h3 class="box-title">
+			        	<i class="fa fa-fw fa-user"></i> Data Mahasiswa
+			        </h3>
+	        	</div>
+			<div class="box-body">
+            <table id="example1" class="table table-bordered table-striped">
 		<thead>
 			<tr>
 				<th>No</th>
@@ -27,6 +32,11 @@
 	</tr>
 <?php } ?>
 	</table>
-	</center>
-</body>
-</html>
+	</td>
+</tr>
+</table>
+</div>
+</div>
+</section>
+</div>
+</div>
